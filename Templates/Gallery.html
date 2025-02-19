@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'assets/img.png' %}">
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+
+        }
+        h1 :hover{
+            background-color: black;
+
+        }
+        img{
+            width:300px;
+            height: 250px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'home' %}">Home</a>
+
+<h1>Products offered at ShopDish</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci assumenda blanditiis deleniti dignissimos exercitationem fugit hic illo incidunt laboriosam laborum magni nam odit quidem, repellendus reprehenderit repudiandae, sint voluptatum.</span><span>Autem blanditiis consectetur cum delectus eos facilis iste, maxime necessitatibus obcaecati porro quaerat quam quia suscipit tempore tenetur veniam voluptas. Ad, architecto distinctio dolorem doloribus est inventore ipsum perspiciatis temporibus.</span></p>
+<img src="{% static  'assets/car.jfif' %}" alt="">
+<img src="{% static 'assets/car2.jfif' %}" alt="">
+<img src="{% static 'assets/car3.jfif' %}" alt="">
+<img src="{% static 'assets/car4.jfif' %}" alt="">
+<img src="{% static 'assets/car5.jfif' %}" alt="">
+<img src="{% static 'assets/car6.jfif' %}" alt="">
+<img src="{% static 'assets/car7.jfif' %}" alt="">
+
+
+</body>
+</html>
